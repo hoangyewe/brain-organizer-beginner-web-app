@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css"/>
+  <title>Brain Organizer</title>
+</head>
+<body>
+  <div class="title" id="title">Brain Organizer </div>
+  <div>
+    <p>"When you switch between tasks dramatically, it drains the brain, so be careful!"</p>
+  </div>
+  <div class="container">
+    <div class="brain">
+      <img src="OIP-removebg-preview.png" usemap="#brainmap" width="100%" height="100%" />
+      <map name="brainmap">
+        <area data-region="frontal" href=""
+          coords="143,285,64,276,45,198,82,140,153,92,222,80,243,86,248,113,232,152,237,186,244,225,220,248"
+          shape="poly" />
+        <area data-region="parietal" alt="Parietal Lobe" title="Parietal Lobe" href=""
+          coords="257,85,243,145,244,179,251,235,288,232,309,215,331,211,361,211,375,199,370,170,371,150,360,122"
+          shape="poly" />
+        <area data-region="occipital" alt="Occipital Lobe" title="Occipital Lobe" href=""
+          coords="375,241,377,278,359,316,385,331,421,310,425,233,412,183,386,148,376,173" shape="poly" />
+        <area data-region="temporal" alt="Temporal Lobe" title="Temporal Lobe" href=""
+          coords="136,296,147,336,224,345,354,304,374,258,365,221,293,223" shape="poly" />
+        <area data-region="cerebellum" alt="Cerebellum" title="Cerebellum" href=""
+          coords="242,345,293,388,318,389,337,380,361,368,378,324,326,312" shape="poly" />
+      </map>
+      <div class="tooltip" id="tooltip"></div>
+    </div>
+    <div class="task-input">
+      <form id="taskForm">
+        <div class="input-group">
+          <label for="task">Task:</label>
+          <input type="text" id="task" name="task" required />
+        </div>
+        <div class="input-group">
+          <label for="keywords">Keywords:</label>
+          <textarea id="keywords" name="keywords" required></textarea>
+        </div>
+        <button class="button-59" role="button">Add Task</button>
+      </form>
+      <div class="task-list" id="taskList"></div>
+    </div>
+  </div>
+<script src="script.js"></script>
+</body>
+</html>
